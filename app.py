@@ -333,13 +333,10 @@ class ISLTransformer(VideoTransformerBase):
 
 st.markdown("🖐️ Show your ISL sign in front of the webcam.")
 
-webrtc_streamer(
+webrtc_ctx = webrtc_streamer(
     key="isl-stream",
     video_transformer_factory=ISLTransformer,
     media_stream_constraints={"video": True, "audio": False},
-    rtc_configuration={
-        "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
-    },
 )
 
 
