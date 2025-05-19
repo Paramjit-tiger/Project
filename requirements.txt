@@ -1,0 +1,12 @@
+opencv-python-headless
+streamlit
+mediapipe
+numpy
+joblib
+Pillow
+pyttsx3
+tensorflow
+scikit-learn
+xgboost
+tabulate
+streamlit-webrtc
