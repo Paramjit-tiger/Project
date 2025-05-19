@@ -337,9 +337,6 @@ webrtc_ctx = webrtc_streamer(
     key="isl-stream",
     video_transformer_factory=ISLTransformer,
     media_stream_constraints={"video": True, "audio": False},
-    rtc_configuration={
-        "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
-    },
 )
 
 
