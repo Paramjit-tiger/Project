@@ -10,3 +10,7 @@ scikit-learn
 xgboost
 tabulate
 streamlit-webrtc
+av
+streamlit-autorefresh
+google-generativeai
+python-dotenv

@@ -1,5 +1,4 @@
 import os
-import imageio
 from PIL import Image, ImageDraw, ImageFont
 import streamlit as st
 
