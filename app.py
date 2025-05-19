@@ -333,21 +333,15 @@ class ISLTransformer(VideoTransformerBase):
 
 st.markdown("🖐️ Show your ISL sign in front of the webcam.")
 
-webrtc_ctx = webrtc_streamer(
+webrtc_streamer(
     key="isl-stream",
     video_transformer_factory=ISLTransformer,
     media_stream_constraints={"video": True, "audio": False},
     rtc_configuration={
-        "iceServers": [
-            {"urls": ["stun:stun.l.google.com:19302"]},  # Google's public STUN server
-            {
-                "urls": ["turn:openrelay.metered.ca:80", "turn:openrelay.metered.ca:443"],
-                "username": "openrelayproject",
-                "credential": "openrelayproject"
-            },
-        ]
+        "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
     },
 )
+
 
 
 # After importing necessary libraries and initializing app...
